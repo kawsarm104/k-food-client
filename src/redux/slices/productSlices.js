@@ -1,18 +1,18 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // First, create the thunk
-export const fetchProducts = createAsyncThunk(
+export const fetchServices = createAsyncThunk(
   'products/fetchProducts',
   async () => {
     const response = await fetch(
       'https://still-peak-01540.herokuapp.com/services'
     ).then((res) => res.json());
-    // console.log(response);
+    console.log(response);
     return response;
   }
 );
 
-export const productSlice = createSlice({
+export const serviceSlice = createSlice({
   name: 'products',
   initialState: {
     allServices: [],
@@ -21,17 +21,17 @@ export const productSlice = createSlice({
 
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(fetchProducts.fulfilled, (state, action) => {
+    builder.addCase(fetchServices.fulfilled, (state, action) => {
       state.allServices = action.payload;
       state.status = 'success';
     });
 
-    builder.addCase(fetchProducts.pending, (state, action) => {
+    builder.addCase(fetchServices.pending, (state, action) => {
       state.status = 'pending';
     });
   }
 });
 
-export const { aSingleProduct } = productSlice.actions;
+export const { aSingleProduct } = serviceSlice.actions;
 
-export default productSlice.reducer;
+export default serviceSlice.reducer;
