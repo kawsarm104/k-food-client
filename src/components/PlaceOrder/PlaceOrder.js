@@ -31,20 +31,6 @@ const PlaceOrder = () => {
       });
   }, []);
   const onSubmit = (data) => {
-    // fetch("http://localhost:5000/orders", {
-    //   method: "POST",
-    //   headers: { "content-type": "application/json" },
-    //   body: JSON.stringify(data),
-    // })
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     if (data.insertedId) {
-    //       notify();
-    //       // clearTheCart();
-    //       reset();
-    //     }
-    //   });
-    // console.log(data);
     axios
       .post("https://still-peak-01540.herokuapp.com/orders", data)
       .then((res) => {

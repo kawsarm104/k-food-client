@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import ManageAllOrderTable from "./ManageAllOrderTable/ManageAllOrderTable";
+import React, { useEffect, useState } from 'react';
+import ManageAllOrderTable from './ManageAllOrderTable/ManageAllOrderTable';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchOrders } from '../../../redux/slices/cartSlice';
 
 const ManageAllOrders = () => {
-  const [allOrders, setAllOrders] = useState([]);
+  const dispatch = useDispatch();
   useEffect(() => {
-    const url = "https://still-peak-01540.herokuapp.com/orders";
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setAllOrders(data);
-      });
+    dispatch(fetchOrders());
   }, []);
+
+  const allOrders = useSelector((state) => state.cart.allOrders);
   return (
     <div className="container ">
       <div className="row mt-5">

@@ -1,30 +1,33 @@
-import React, { useEffect, useState } from "react";
-import useAuth from "../../hooks/useAuth";
-import MyOrder from "./MyOrder/MyOrder";
-// React toastify 
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import React, { useEffect, useState } from 'react';
+import useAuth from '../../hooks/useAuth';
+import MyOrder from './MyOrder/MyOrder';
+import { useSelector } from 'react-redux';
+
+// React toastify
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const MyOrders = () => {
   const { user } = useAuth();
+  // const allOrders = useSelector((state) => state.cart.allOrders);
+
   const [allOrders, setAllOrders] = useState([]);
-    const notify = () => toast.success("Order deleted successfully");
+  const notify = () => toast.success('Order deleted successfully');
   // Loading all orders
   useEffect(() => {
-    const url = "https://still-peak-01540.herokuapp.com/orders";
+    const url = 'https://still-peak-01540.herokuapp.com/orders';
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
         setAllOrders(data);
       });
   }, []);
-  // console.log(typeof(alluser));
+  console.log(typeof alluser);
   const handleDeleteButton = (id) => {
-    // const proceed = window.confirm("Are you sure you want to delete ?");
     const proceed = true;
     if (proceed) {
       fetch(`https://still-peak-01540.herokuapp.com/orders/${id}`, {
-        method: "DELETE",
+        method: 'DELETE'
       })
         .then((res) => res.json())
         .then((data) => {

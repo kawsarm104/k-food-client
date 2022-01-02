@@ -12,16 +12,6 @@ const Services = () => {
 
   const allServices = useSelector((state) => state.services.allServices);
 
-  // const [allServices, setAllServices] = useState([]);
-  // useEffect(() => {
-  //   const url = 'https://still-peak-01540.herokuapp.com/services';
-  //   fetch(url)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setAllServices(data);
-  //       // console.log(data);
-  //     });
-  // }, []);
   if (!allServices.length > 0) {
     return (
       <div className="text-center loading-spinner mt-5">
