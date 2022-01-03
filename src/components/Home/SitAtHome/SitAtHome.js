@@ -5,7 +5,7 @@ import "./SitAtHome.css";
 
 const SitAtHome = () => {
   return (
-    <Container fluid className="sitathome">
+    <Container fluid  className="sitathome">
       <Row className="">
         <Col sm={12} md={6} className="g-0">
           <img src={sitathomeimg} className="img-fluid" alt="" />

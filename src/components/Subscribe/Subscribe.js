@@ -1,9 +1,14 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Subscribe.css';
 
+
 const Subscribe = () => {
+    
+    AOS.init({ duration: 2000 });
     return (
-        <div className='overflow-hidden'>
+        <div data-aos="zoom-in-down" className='overflow-hidden'>
        <div className='row mt-3 bg overflow-hidden'>
            <div className='col-md-6 overflow-hidden'>
            <div className='text-center fs-1 m-3 fw-bold overflow-hidden'>

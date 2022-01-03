@@ -2,14 +2,18 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import locationimg from "../../../images/locationimage.png"
 import appstoreimg from "../../../images/downloadappstore.PNG"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import playstoreimg from "../../../images/downloadgoogleplaystore.PNG"
 
 import "./GetMoreWithApp.css"
 const GetMoreWithApp = () => {
+  
+  AOS.init({ duration: 2000 });
   return (
     <Container fluid className="mt-5 get-more-section">
       <Row className="mt-5">
-        <Col sm={12} md={6} className="mt-5 pt-5 ps-2 pe-4 ">
+        <Col data-aos="zoom-in-up" sm={12} md={6} className="mt-5 pt-5 ps-2 pe-4 ">
           <h1 className="my-3 fs-1 fw-bold pe-4">
             Get More With{" "}
             <span className="text-warning">

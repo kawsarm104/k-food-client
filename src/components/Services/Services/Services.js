@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import Service from "../Service/Service";
 
+
 const Services = () => {
   const [allServices, setAllServices] = useState([]);
   useEffect(() => {

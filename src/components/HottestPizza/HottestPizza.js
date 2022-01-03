@@ -1,10 +1,13 @@
 import React from 'react';
 import images from '../../images/italianpizza.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './HottestPizza.css';
 const HottestPizza = () => {
+    AOS.init({ duration: 2000 });
     return (
         <div className='container'>
-            <div className='row custom mt-3 overflow-hidden'>
+            <div  data-aos="flip-left" className='row custom mt-3 overflow-hidden'>
                 <div className='col-md-4 container'>
                     <p className='text-style m-5'>Always
                     <h1 className='text-style2'>the Hottest</h1>

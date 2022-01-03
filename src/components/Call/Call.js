@@ -1,9 +1,12 @@
 import React from 'react';
 import call from '../../images/363-3639744_call-center-png-clipart-removebg-preview.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './Call.css';
 const Call = () => {
+    AOS.init({ duration: 2000 });
     return (
-        <div className='container'>
+        <div data-aos="zoom-out" className='container'>
             <div className="row bg-style mt-3 overflow-hidden">
                 <div className='col-md-4 overflow-hidden'>
 <img src={call} className='img-fluid' alt="" />
