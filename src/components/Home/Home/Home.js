@@ -1,6 +1,9 @@
 import React from "react";
+import Call from "../../Call/Call";
+import HottestPizza from "../../HottestPizza/HottestPizza";
 // import useAuth from "../../../hooks/useAuth";
 import Services from "../../Services/Services/Services";
+import Subscribe from "../../Subscribe/Subscribe";
 import Banner from "../Banner/Banner";
 import GetMoreWithApp from "../GetMoreWithApp/GetMoreWithApp";
 import SitAtHome from "../SitAtHome/SitAtHome";
@@ -14,6 +17,10 @@ const Home = () => {
       <Services></Services>
       <SitAtHome></SitAtHome>
       <GetMoreWithApp></GetMoreWithApp>
+      <HottestPizza></HottestPizza>
+      <Call></Call>
+      <Subscribe></Subscribe>
+
     </div>
   );
 };

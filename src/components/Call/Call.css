@@ -1,0 +1,20 @@
+.bg-style{
+    background: linear-gradient(to right, #e55d87, #5fc3e4);
+  
+}
+.text-st{
+    font-size: 27px;
+}
+.phone-style:hover{
+    background-color: limegreen;
+}
+.phone-style{
+    font-size: 40px;
+    background-color: lightsteelblue;
+    width: 90px;
+    height: 90px;
+    padding-bottom: 20px;
+}
+.nmbr{
+    font-size: 40px;
+}

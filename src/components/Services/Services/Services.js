@@ -22,12 +22,12 @@ const Services = () => {
   }
   return (
     <>
-      <div className="text-center mt-4">
+      <div className="text-center mt-4 container">
         {/* <h2>total {allServices.length} foods item got </h2> */}
         <p className="text-warning fw-bolder fs-6">Quick pick</p>
         <h1 className="fw-bolder ">Popular Goods</h1>
       </div>
-      <div className="container-fluid row mx-auto">
+      <div className="container row mx-auto">
         {allServices.map((service) => (
           <Service key={service._id} service={service}></Service>
         ))}{" "}

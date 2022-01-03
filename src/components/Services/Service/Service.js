@@ -17,7 +17,7 @@ const Service = (props) => {
         </Card.Body>
         <Card.Footer className="d-flex justify-content-center border-0 shadow-none bg-white">
           <Link to={`/placeorder/${_id}`}>
-            <Button variant="warning " className="p-3 rounded-pill">Order Now</Button>{" "}
+            <Button variant="success " className="ps-3 pe-3 rounded-pill">Order Now</Button>{" "}
           </Link>
           {/* <Link to={`/singleservicedetail/${_id}`}>
             <Button variant="outline-warning">View Details</Button>{" "}

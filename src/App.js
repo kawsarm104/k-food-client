@@ -6,6 +6,7 @@ import Footer from "./components/Common/Footer/Footer";
 import Header from "./components/Common/Header/Header";
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import Home from "./components/Home/Home/Home";
+import HottestPizza from "./components/HottestPizza/HottestPizza";
 import Login from "./components/Login/Login";
 import MyOrders from "./components/MyOrders/MyOrders";
 import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
@@ -29,6 +30,9 @@ function App() {
             </Route>
             <Route exact path="/login">
               <Login></Login>
+            </Route>
+            <Route exact path="/hottest">
+              <HottestPizza></HottestPizza>
             </Route>
             <PrivateRoute exact path="/placeorder">
               <PlaceOrder></PlaceOrder>

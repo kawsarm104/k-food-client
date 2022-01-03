@@ -23,7 +23,7 @@ const Banner = () => {
                   <h1 className=" text-light large-text">
                     Express
                     <br />
-                    <span className="text-yellow">Home Deliverys</span>
+                    <span className="text-yellow">Home Delivery</span>
                   </h1>
                 </Col>
                 <Col className="" sm={12} lg={6}>
