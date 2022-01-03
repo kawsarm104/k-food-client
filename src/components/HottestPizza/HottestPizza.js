@@ -3,8 +3,8 @@ import images from '../../images/italianpizza.png';
 import './HottestPizza.css';
 const HottestPizza = () => {
     return (
-        <div>
-            <div className='row custom mt-3 overflow-hidden '>
+        <div className='container'>
+            <div className='row custom mt-3 overflow-hidden'>
                 <div className='col-md-4 container'>
                     <p className='text-style m-5'>Always
                     <h1 className='text-style2'>the Hottest</h1>
@@ -13,7 +13,7 @@ const HottestPizza = () => {
                     <p className='text-style3'>Curabitur imperdiet varius lacus, id placerat purus vulputate non. Fusce in felis vel arcu maximus placerat eu ut arcu. Ut nunc ex, gravida vel porttitor et, pretium ac sapien.</p>
                     </p>
                     
-                    <button className='btn btn-dark mx-5 ps-5 pe-5 p-3 rounded-pill custom-b'>Get Pizza</button>
+                    <button className='btn btn-dark mx-5 ps-5 pe-5 p-3 rounded-pill custom-b mb-3'>Get Pizza</button>
                    
                         
                 </div>

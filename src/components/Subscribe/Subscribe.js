@@ -3,7 +3,7 @@ import './Subscribe.css';
 
 const Subscribe = () => {
     return (
-        <div>
+        <div className='overflow-hidden'>
        <div className='row mt-3 bg overflow-hidden'>
            <div className='col-md-6 overflow-hidden'>
            <div className='text-center fs-1 m-3 fw-bold overflow-hidden'>
